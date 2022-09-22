@@ -1,0 +1,37 @@
+<div *ngIf="isTweetDeleted" class="notification text-notification"><br>Tweet Deleted Successfully!<br>
+</div>
+<div class="container">
+    <div *ngFor="let user of get.tweets">
+        <div class="card border-secondary mb-3 my-auto mx-auto"
+            style="max-width: 30rem;margin-top: 10em;border-radius: 10px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            <div class="card-body" style="font-weight: bold;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-8">
+                            <small *ngIf="tweetExist"> {{message}}</small>
+                        </div>
+                        <div class="col-8">
+                            <h5 class="card-title">Posted {{getTweetPostedDateTime(user.createdDateTime)}}</h5>
+                        </div>
+                        <div class="col-4 ml-auto">
+                            <img src="../../../assets/images/delete.png" width="50" height="" alt="delete" srcset=""
+                                class="ml-auto" (click)="delete(user.tweetId)" style="float:right;">
+                        </div>
+                    </div>
+                </div>
+
+
+                <p class="card-text">{{user.tweet}}</p>
+
+            </div>
+            <div class="card-header bg-light"
+                style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                <p *ngFor="let reply of user.tweetReplies|keyvalue">{{reply.key}}
+                    Replied :
+                    {{reply.value}}</p>
+            </div>
+
+        </div>
+
+    </div>
+</div>

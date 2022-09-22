@@ -1,0 +1,25 @@
+<div class="container">
+    <div *ngFor="let user of get.tweets">
+        <div class="card border-secondary mb-3 my-auto mx-auto" style="max-width: 30rem;margin-top: 10em;">
+
+            <div class="card-header" style="font-weight: bold;color:#44324d;"><img
+                    src="../../../assets/images/avatar.png" style="margin-right:100px;" alt="...">{{user.userName}}
+            </div>
+            <div class="card-body">
+                <h5 class="card-title" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';">On
+                    {{user.createdDateTime | date:'medium'}}</h5>
+                <p class="card-text"
+                    style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';font-weight: bold;">
+                    {{user.tweet}}</p>
+            </div>
+            <div class="card-header bg-light" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';">
+                <p *ngFor="let reply of user.tweetReplies|keyvalue">{{reply.key}}
+                    Replied :
+                    {{reply.value}}</p>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>

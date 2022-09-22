@@ -1,0 +1,32 @@
+<div class="container">
+    <table class="table table-border" style="align-items: center;font-weight: bold;">
+        <thead>
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>EmailID</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of get.users">
+                <td>{{user.firstName}}</td>
+                <td>{{user.lastName}}</td>
+                <td>{{user.emailId}} </td>
+        </tbody>
+    </table>
+</div>
+<div style="position:absolute; bottom:0px;">
+    <span style="margin-right: 20px;"></span>
+    <img src="../../../assets/images/user1.png">
+    <span style="margin-right: 100px;"></span>
+    <img src="../../../assets/images/user7.png">
+    <span style="margin-right: 100px;"></span>
+    <img src="../../../assets/images/user4.png">
+    <span style="margin-right: 100px;"></span>
+    <img src="../../../assets/images/user6.png">
+    <span style="margin-right: 100px;"></span>
+    <img src="../../../assets/images/user2.png">
+    <span style="margin-right: 100px;"></span>
+    <img src="../../../assets/images/user8.png">
+</div>

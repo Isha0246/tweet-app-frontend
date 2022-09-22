@@ -1,0 +1,35 @@
+<nav class="navbar navbar-dark">
+  <span class="navbar-brand mb-0 h1 center">Tweet App</span>
+</nav>
+<div class="card mb-3" style="max-width: 540px; margin-top: 70px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="../../../../assets/images/login.png" width="150" height="" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h1 class="card-title text-blue" style="color:#44324d;margin-bottom: 30px;">User Login</h1>
+        <form ngNativeValidate (ngSubmit)="validateLogin()">
+          <div class="form-group">
+            <label for="exampleInputEmail1" style="color:#44324d;">User ID</label>
+            <input type="text" class="form-control" name="userId" id="userId" [(ngModel)]="userId" required>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1" style="color:#44324d;">Password</label>
+            <input style="margin-bottom: 20px;" type="password" class="form-control" name="password" id="password"
+              [(ngModel)]="password" required>
+            <a href="forgotPassword()">Forgot Password</a>
+          </div>
+          <br>
+          <button type="submit" class="d-grid gap-2 col-12 mx-auto btn btn-primary"
+            style="background-color:#44324d;color: white;">Login</button>
+        </form>
+        <small *ngIf='inValidLogin' style="color: red;" class="mx-auto my-auto">Invalid credentials</small>
+      </div>
+      <div style="margin-bottom: 30px;margin-left: 20px;">New User? <a
+          style="text-decoration: green underline;color: green;" class="link" (click)="registerPage()">Register Now
+          !</a></div>
+    </div>
+  </div>
+</div>
+<!-- <app-footer></app-footer> -->

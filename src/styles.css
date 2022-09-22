@@ -1,0 +1,133 @@
+/* You can add global styles to this file, and also import other style files */
+.navbar.navbar-dark {
+    background-color: #44324d;
+}
+
+.align-top {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.nav-item {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+ul li:hover {
+    background-color: tomato;
+    cursor: pointer;
+}
+
+.nav-item {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+.navbar-brand.my-auto.mx-auto {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navbar-brand.my-auto.mx-auto:hover {
+    cursor: pointer;
+}
+
+.postTweetCard {
+    margin-top: 5%;
+}
+
+.text-hi {
+    animation: blink 3s linear infinite;
+    color: tomato;
+}
+
+@keyframes blink {
+    from {
+        color: #44324d;
+    }
+
+    to {
+        color: white;
+    }
+}
+
+.text-notification {
+    animation: blink-alert 3s linear infinite;
+    color: white;
+}
+
+@keyframes blink-alert {
+    from {
+        color: white;
+    }
+
+    to {
+        color: tomato;
+    }
+}
+
+.left-section {
+    float: left;
+}
+
+.right-section {
+    float: right;
+}
+
+.my-tweets {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.card.mx-auto {
+    margin-top: 80px;
+}
+
+.my-tweets {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.text-blue {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.right-side {
+    margin-left: 50%;
+}
+
+.col {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    color: #44324d;
+    font-weight: bold;
+}
+
+.col-6 {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    color: #44324d;
+    font-weight: bold;
+}
+
+.col-md {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: #44324d;
+    font-weight: bold;
+}
+
+.link:hover {
+    cursor: pointer;
+}
+
+.notification {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #44324d;
+    color: white;
+    text-align: center;
+    height: 60px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 400px;
+    border-radius: 30px;
+}
